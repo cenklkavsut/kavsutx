@@ -5,7 +5,40 @@
 #assign an admin
 #Buy tokens
 #end Sale
-
+#call the Blockchain
+#geth --rinkeby --rpc --rpcapi="personal,eth,network,web3,net" --ipcpath "~/Library/Ethereum/geth.ipc"
+#geth attach
+#eth.syncing
+#eth.accounts
+#eth.accounts[0]
+#eth.getBalance(eth.accounts[0])
+#personal.unlockAccount(eth.accounts[0],null,1200)
+#truffle --reset --compile --all --network --rinkeby
+#open geth console all below call in console to test
+#var admin = eth.accounts[0] 
+#var tokenSale =275000 
+# var tokensAddress = (find the network in kavsutSale.json and copy the address)
+#copy the abi in the console ffro kavsutx.json but double check if it has changed
+{% comment %} var abi = [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_initialSupply",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }, {% endcomment %}
+    
+    #var tokensAddress = (rinkeby network address on the kavsutx.jsons network address and copy address)
+    #var tokenContract = web3.eth.contact(abi)
+    #var tokenInstance = TokenContract.eth(tokensAddress)
+    #tokenInstance.transfer(tokenSaleAddress,tokenAvailable,{from: admin})
+    #kavsutx folder ls -l ~/Library/Ethereum/rinkeby/keystore
+#ktx 
         {% comment %} <div id="content" class="text-center" style="display: ;">
         <div class="row justify-content-center">
         <div class="card my-4 p-3">
