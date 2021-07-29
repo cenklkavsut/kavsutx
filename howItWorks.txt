@@ -19,6 +19,9 @@
 #var tokenSale =275000 
 # var tokensAddress = (find the network in kavsutSale.json and copy the address)
 #copy the abi in the console ffro kavsutx.json but double check if it has changed
+#chmod +x deployfrontend.sh in therminal
+#go to settings in the github repo and in github pages settings select master branch/docs folder option
+# chain to mainnetwork in github and kavsutx.github.io/kavsutx/ is the ico page 
 {% comment %} var abi = [
     {
       "inputs": [
@@ -38,6 +41,7 @@
     #var tokenInstance = TokenContract.eth(tokensAddress)
     #tokenInstance.transfer(tokenSaleAddress,tokenAvailable,{from: admin})
     #kavsutx folder ls -l ~/Library/Ethereum/rinkeby/keystore
+    #github pages make use of it to deploy
 #ktx 
         {% comment %} <div id="content" class="text-center" style="display: ;">
         <div class="row justify-content-center">
